@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <title>Drum Kit</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<html>
+    <body>
+        <div class="container-fluid text-center" id="drum-machine">
+            <div class="row">
+            <div class="col-3 my-auto mx-auto">
+            <div class="keys " id="display">
+                <div id="curInst"></div>
+                <button data-key="81" class="drum-pad key" id="cowbell" onclick="clickPlay(81, 'cowbell')">Q<audio data-key="81" preload ="auto" class="clip" id="Q" src="http://www.denhaku.com/r_box/sr16/sr16perc/hicowbel.wav"></audio></button>
+                <button data-key="87" class="drum-pad key" id="woodblock"onclick="clickPlay(87, 'woodblock')">W<audio data-key="87" preload ="auto" class="clip" id="W" src="http://www.denhaku.com/r_box/sr16/sr16perc/md%20block.wav"></audio></button>
+                <button data-key="69" class="drum-pad key" id="crash" onclick="clickPlay(69, 'crash')">E<audio data-key="69" preload ="auto" class="clip" id="E" src="http://www.randomthink.net/labs/html5drums/drumkit/Crash%20Cymbal.mp3"></audio></button>
+                <button data-key="65" class="drum-pad key" id="hiHat" onclick="clickPlay(65, 'hiHat')">A<audio data-key="65" preload ="auto" class="clip" id="A" src="http://dight310.byu.edu/media/audio/FreeLoops.com/4/4/Korg%20Closed%20Hi%20Hat-2502-Free-Loops.com.mp3"></audio></button>
+                <button data-key="83" class="drum-pad key" id="ride" onclick="clickPlay(83, 'ride')">S<audio data-key="83" preload ="auto" class="clip" id="S" src="http://www.burnkit2600.com/temp/HR-16/HR-16-WAVs/16-rimshot%20snare.wav"></audio></button>
+                <button data-key="68" class="drum-pad key" id="snare" onclick="clickPlay(68, 'snare')">D<audio data-key="68" preload ="auto" class="clip" id="D" src="http://electrongate.com/dmxfiles/RIDE2A.wav"></audio></button>
+                <button data-key="90" class="drum-pad key" id="tom1" onclick="clickPlay(90, 'tom1')">Z<audio data-key="90" preload ="auto" class="clip" id="Z" src="http://www.randomthink.net/labs/html5drums/drumkit/Tom%20Mid.wav"></audio></button>
+                <button data-key="88" class="drum-pad key" id="bass" onclick="clickPlay(88, 'bass')">X<audio data-key="88" preload ="auto" class="clip" id="X" src="http://www.denhaku.com/r_box/sr16/sr16bd/brt%20hall.wav"></audio></button>
+                <button data-key="67" class="drum-pad key" id="tom2" onclick="clickPlay(67, 'tom2')">C<audio data-key="67" preload ="auto" class="clip" id="C" src="http://electrongate.com/dmxfiles/SFLTOM2.wav"></audio></button>
+            </div>
+            </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
