@@ -46,3 +46,7 @@ body {
     border-radius: 5px;
     padding: 3rem 1.5rem;
 }
+
+#curInst {
+    color: white;
+}
